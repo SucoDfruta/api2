@@ -9,4 +9,4 @@ server.use(express.json())
 
 
 server.listen(process.env.PORT, 
-        () => console.log(`A api está on na porta ${process.env.PORT}`)
+        () => console.log(`A api está on na porta ${process.env.PORT}`))
