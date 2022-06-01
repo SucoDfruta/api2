@@ -9,6 +9,12 @@ export async function inserirFilme(filme) {
     return filme;
 }
 
+
+
+
+
+
+
 export async function alterarImagem(imagem, id) {
     const comando = `UPDATE tb_fime
                             SET img_filme    =?
@@ -17,6 +23,11 @@ export async function alterarImagem(imagem, id) {
     const [resposta] = await con.query(comando, [imagem, id]);
     return resposta.affectedRows;
 }
+
+
+
+
+
 
 export async function listarFilmes(){
     const comando = `SELECT id_filme			id,

@@ -9,6 +9,8 @@ const server = express();
 server.use(cors());
 server.use(express.json());
 
+server.use('/storage/capasFilmes')
+
 server.use(usuarioController);
 server.use(filmeController);
 
